@@ -1,0 +1,42 @@
+header {
+    width: 100vw;
+    height: 64px;
+
+
+    background-color: var(--cinza);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header>p {
+    color: var(--preto);
+    font-weight: 500;
+    font-size: 24px;
+
+}
+
+/* SESSAO BANNER */
+#banner {
+    width: 100vw;
+    height: 400px;
+    background-image: url(../assets/images/image-michael-jordan.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 10%;
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+}
+
+#banner>div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+}
+#logo{
+    width: 147px;
+    height: 35px ;
+}
