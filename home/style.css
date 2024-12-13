@@ -90,10 +90,79 @@ main {
 
 /* SESSAO SECTION */
 
-#section_card_tenis{
+#section_tenis {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     gap: 32px;
     margin-top: 72px;
+}
+
+#section_tenis>div{
+    width: 100%;
+    max-width: 384px;
+    height: 326px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.div_card_tenis_img{
+    width: 100%;
+    height: 200px;
+    background-color: var(--azulPastelComOpacidade);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div_card_tenis_nome{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.div_card_tenis_nome>p:nth-child(1){
+    color: var(--preto);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+}
+.div_card_tenis_nome>p:nth-child(2){
+    color: var(--azulPastel);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.div_card_tenis_img>img {
+    width: 225px;
+    height: 135px;
+}
+
+#section_tenis>div>.div_card_tenis_nome {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#section_tenis>div>.div_card_tenis_nome>.nome_tenis {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.4px;
+}
+
+#section_tenis>div>.div_card_tenis_nome>.categoria_tenis {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.41px;
+    color: var(--azul);
+}
+
+#section_tenis>div>.span_card_tenis_valor{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25.52px;
+    font-family: "Space Grotesk", sans-serif  ;
 }
