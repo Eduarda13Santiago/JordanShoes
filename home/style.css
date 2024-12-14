@@ -1,32 +1,32 @@
 /* SESSAO HEADER */
 header {
     width: 100%;
+    /*Pega a largura do dispositivo*/
     height: 64px;
-
-
-    background-color: var(--cinza);
     display: flex;
     justify-content: center;
+    /*Horizontal*/
     align-items: center;
-
+    /*Vertical*/
 }
 
 header>p {
     color: var(--preto);
     font-weight: 500;
     font-size: 24px;
-
 }
 
 /* SESSAO BANNER */
 #banner {
     width: 100%;
+    /*OU 100%*/
     height: 400px;
     background-image: url(../assets/images/image-michael-jordan.png);
     background-repeat: no-repeat;
     background-size: cover;
+    /*Acompanha o tamanho do elemento*/
     padding: 5% 10%;
-    color: var(--branco);
+    /*OU 10VW*/
 
     display: flex;
     align-items: center;
@@ -35,38 +35,32 @@ header>p {
 #banner>div {
     display: flex;
     flex-direction: column;
-
     gap: 40px;
 }
 
 #logo {
-    width: 147px;
-    height: 35px;
+    width: 180px;
 }
 
 #banner>div>span {
     color: var(--branco);
     font-weight: 500;
-    font-size: 30px;
+    font-size: 32px;
 }
 
 #banner>div>p {
-    max-width: 515px;
-
+    color: var(--branco);
     font-weight: 400;
     font-size: 24px;
+    max-width: 515px;
 }
 
 /* SESSAO MAIN */
-
 main {
-    padding: 0 10%;
-
+    padding: 80px 10%;
 }
 
 .main_cabecalho {
-    margin-top: 80px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,29 +70,28 @@ main {
     color: var(--preto);
     font-size: 32px;
     font-weight: 600;
-
 }
 
 .main_cabecalho>p {
     color: var(--preto);
     font-size: 24px;
     font-weight: 400;
-    width: 585px;
-
+    max-width: 585px;
     margin-top: 24px;
 }
 
 /* SESSAO SECTION */
-
 #section_tenis {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
     gap: 32px;
     margin-top: 72px;
+   
 }
 
-#section_tenis>div{
+#section_tenis>div {
     width: 100%;
     max-width: 384px;
     height: 326px;
@@ -109,14 +102,15 @@ main {
     align-items: flex-start;
 }
 
-.div_card_tenis_img{
+.div_card_tenis_imagem{
     width: 100%;
     height: 200px;
-    background-color: var(--azulPastelComOpacidade);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background-color: var(--azulPastelComOpacidade);
 }
+
 .div_card_tenis_nome{
     display: flex;
     flex-direction: column;
@@ -127,42 +121,17 @@ main {
     color: var(--preto);
     font-weight: 500;
     font-size: 18px;
-    line-height: 25px;
 }
+
 .div_card_tenis_nome>p:nth-child(2){
     color: var(--azulPastel);
     font-weight: 500;
     font-size: 16px;
-    line-height: 25px;
 }
 
-.div_card_tenis_img>img {
-    width: 225px;
-    height: 135px;
-}
-
-#section_tenis>div>.div_card_tenis_nome {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-#section_tenis>div>.div_card_tenis_nome>.nome_tenis {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 23.4px;
-}
-
-#section_tenis>div>.div_card_tenis_nome>.categoria_tenis {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 17.41px;
-    color: var(--azul);
-}
-
-#section_tenis>div>.span_card_tenis_valor{
+.span_card_tenis_valor{
+    font-family: "Space Grotesk", sans-serif;
     font-size: 20px;
     font-weight: 500;
-    line-height: 25.52px;
-    font-family: "Space Grotesk", sans-serif  ;
+    color: var(--preto);
 }
